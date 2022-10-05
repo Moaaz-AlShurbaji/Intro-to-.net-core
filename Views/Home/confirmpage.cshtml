@@ -1,0 +1,24 @@
+﻿@model Employee
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <div class="text-center">
+            <h1>New employee has been added successfuly!</h1>
+            <h3>Employee Details:</h3>
+            <p>Name: @Model.name</p>
+            <p>Department: @Model.department</p>
+            @if (Model.isActive)
+            {
+                <p>Status: Active</p>
+            }
+            else
+            {
+                <p>Status: Not active</p>
+            }
+            
+        </div>
+    </body>
+</html>
